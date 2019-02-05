@@ -22,7 +22,6 @@ Defer_::Defer_(Fn &&fn)
 
 Defer_::Defer_(Defer_ &&that)
     : callback_{std::move(that.callback_)} {
-  std::cout << "move\n";
 }
 
 Defer_::~Defer_() {
